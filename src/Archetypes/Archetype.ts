@@ -1,4 +1,6 @@
-export default abstract class Archetyoe {
+import { EnergyType } from '../Energy';
+
+export default abstract class Archetype {
   private _special: number;
   private _cost: number;
   private _name:string;
@@ -25,5 +27,5 @@ export default abstract class Archetyoe {
     throw new Error('Not implemented');
   }
 
-  abstract get energyType(): string;
+  abstract get energyType(): EnergyType;
 }
