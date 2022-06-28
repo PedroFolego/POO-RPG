@@ -5,7 +5,8 @@ export default interface Fighter {
   strength: number,
   defense: number,
   energy?: Energy,
-  attack(enemy: Fighter): void,
+  attack(enemy: Fighter | Pick<Fighter,
+  'lifePoints' | 'strength' | 'receiveDamage'>): void,
   special(enemy: Fighter): void,
   levelUp(): void,
   receiveDamage(attackPoints: number): number; 
