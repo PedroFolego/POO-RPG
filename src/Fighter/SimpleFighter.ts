@@ -1,8 +1,6 @@
-import Fighter from './Fighter';
-
-interface SimpleFighter extends Pick<Fighter,
-'lifePoints' | 'strength' | 'receiveDamage'> {
-  attack(enemy: SimpleFighter | Fighter): void,
-}
-
-export default SimpleFighter;
+export default interface SimpleFighter {
+  lifePoints: number;
+  strength: number;
+  attack(enemy: SimpleFighter): void;
+  receiveDamage(attackPoints: number): void;
+} 

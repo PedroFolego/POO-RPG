@@ -7,10 +7,9 @@ const player1 = new Character('Bilbo');
 const player2 = new Character('Legolas');
 const player3 = new Character('Gandalf');
 
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
+for (let index = 0; index < 25; index += 1) {
+  player1.levelUp();
+}
 
 const monster1 = new Monster();
 const monster2 = new Dragon();
@@ -33,5 +32,8 @@ export {
   monster2,
   pvp,
   pve,
+};
+
+export {
   runBattles,
 };
