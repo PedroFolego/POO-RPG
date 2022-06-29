@@ -11,7 +11,7 @@ Neste projeto apliquei os princípios da arquitetura SOLID e os princípios de P
 ## Instalando Dependências
 
   ```bash
-  cd POO_RPG/ 
+  cd POO-RPG/ 
   npm install
   ``` 
 
